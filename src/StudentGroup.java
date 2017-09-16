@@ -1,4 +1,5 @@
 import java.util.Date;
+import java.lang.Math;
 
 /**
  * A fix-sized array of students
@@ -125,8 +126,9 @@ this.students[index]=student;
 for(int i=index;i<students.length-1;i++)
 {
 students[i]=students[i+1];
-		// Add your implementation here
+		
 	}
+students[students.length-1]=null;
 
 }
 
@@ -140,6 +142,13 @@ students[i]=students[i+1];
 
 	@Override
 	public void removeFromIndex(int index) {
+for(int i=index;i<students.length-1;i++)
+{
+this.students[index]=null;
+}
+
+		
+	
 		// Add your implementation here
 	}
 
@@ -160,6 +169,7 @@ students[i]=students[i+1];
 
 	@Override
 	public void bubbleSort() {
+
 
 		// Add your implementation here
 	}
@@ -196,13 +206,24 @@ students[i]=students[i+1];
 
 	@Override
 	public Student[] getStudentsWithMaxAvgMark() {
+
+
+
 		// Add your implementation here
 		return null;
 	}
 
 	@Override
 	public Student getNextStudent(Student student) {
-		// Add your implementation here
+		
+try{
+if(students==null)
+throw new IllegalArgumentException();
+}
+catch(IllegalArgumentException e)
+{
+
+}// Add your implementation here
 		return null;
 	}
 }

@@ -10,7 +10,6 @@ Student m4=new Student(604,"sam",new Date(1999,8,28),98.2);
 Student m5=new Student(605,"sam",new Date(2000,8,29),99.2);
 a1.addFirst(m1);
 a1.setStudent(m2,1);
-
 a1.setStudent(m3,2);
 a1.addLast(m4);
 a1.add(m5,4);
@@ -30,6 +29,7 @@ System.out.println(a1.getStudent(2).getId());
 System.out.println("\n\n id:"+men.getId());
 
 System.out.println("\n\n name:"+men.getFullName());
+System.out.println("\n\n date:"+men.getBirthDate());
 
 
 	
