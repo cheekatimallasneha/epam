@@ -122,16 +122,20 @@ this.students[index]=student;
 
 	@Override
 	public void remove(int index) {
-for(int i=index;i>students.length;i++)
+for(int i=index;i<students.length-1;i++)
 {
-students[i+1]=students[i];
+students[i]=students[i+1];
 		// Add your implementation here
-	}}
+	}
+
+}
 
 
 	@Override
 	public void remove(Student student) {
-		// Add your implementation here
+
+		
+// Add your implementation here
 	}
 
 	@Override
@@ -156,6 +160,7 @@ students[i+1]=students[i];
 
 	@Override
 	public void bubbleSort() {
+
 		// Add your implementation here
 	}
 
